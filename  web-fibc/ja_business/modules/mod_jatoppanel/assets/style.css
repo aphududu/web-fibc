@@ -1,0 +1,246 @@
+/*
+# ------------------------------------------------------------------------
+# JA Top Panel module
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+# Author: JoomlArt.com
+# Websites: http://www.joomlart.com - http://www.joomlancers.com.
+# ------------------------------------------------------------------------
+*/
+.ja-toppanel-mainwrap {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 100;
+}
+
+.ja-toppanel-container { display: none; height: 100%; overflow: hidden; }
+
+.ja-toppanel-panels{
+	bottom: 0;
+	clear: both;
+	height: auto;
+	left: 0;
+	overflow: hidden;
+	width: 99%;
+	z-index: 5;
+}
+
+.ja-toppanel-wraper {
+	background: transparent url("images/toppanel_bg.png") repeat;
+	color: #969696;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+.bg-transparent {
+	background: transparent url("images/toppanel_bg_trans.png") repeat;
+}
+
+.ja-toppanel-content { }
+
+.ja-toppanel-dontshowagain { float: right; position: relative; z-index: 21; }
+
+.ja-toppanel-close {
+	background: url("images/close.gif") no-repeat left;
+	cursor: pointer;
+	float: right;
+	padding-left: 10px;
+	position: relative;
+	text-indent: -2000px;
+	width: 20px;
+	z-index: 20;
+}
+
+.ja-toppanel-button-wraper {
+	background: transparent;
+	height: 19px;
+	position: relative;
+	top: 0;
+	width: 100%;
+	z-index: 10;
+}
+
+div.ja-toppanel-button-wraper .btn-left { float: left; margin: 0; }
+
+div.ja-toppanel-button-wraper .btn-right { float: right; height: 0; overflow: hidden; right: 10px; }
+
+.ja-toppanel-button-subwap {
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+	width: 120px;
+}
+
+.ja-toppanel-button-l {
+	background: url("images/button-left.png") no-repeat left;
+	float: left;
+	height: 19px;
+	width: 20px;
+}
+
+.ja-toppanel-button-r {
+	background: url("images/button-right.png") no-repeat right;
+	float: right;
+	height: 19px;
+	width: 20px;
+}
+
+.ja-toppanel-button {
+	background: url("images/button-mid.png") repeat-x;
+	color: #FFFFFF;
+	float: left;
+	font-size: 85%;
+	height: 19px;
+	line-height: 18px;
+	overflow: hidden;
+	text-align: center;
+	width: 80px;
+}
+
+ul.ja-toppanel-col { display: inline; position: relative; }
+
+ul.ja-toppanel-col li { text-align: left; }
+
+ul.ja-toppanel-row { display: inline; position: relative; }
+
+ul.ja-toppanel-row li { }
+
+#ja-toppanel-Overlay{
+	background-color: rgb(0, 0, 0);
+	left: 0;
+	opacity: 15;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+}
+
+/* Add more */
+/* TOP PANEL COMMON STYLE
+--------------------------------------------------------- */
+.ja-toppanel-panels { width: 100%; }
+
+.ja-toppanel-wraper {
+	background: #2C9AC3;
+	border: 1px solid #4faed2;
+	border-bottom: 0;
+	border-top: 0;
+	margin: 0 10px;
+	min-height: 131px;
+}
+
+.ja-toppanel-content { color: #fff; position: relative; width: 100%; }
+
+/* Don't Show Again ---*/
+.ja-toppanel-dontshowagain { color: #fff; position: absolute; right: 45px; top: 5px; }
+
+/* Background Transparent ---*/
+.bg-transparent{ background: url(images/trans-topcpanel.png); }
+
+/* Overlay ---*/
+#ja-toppanel-Overlay { background: #000; top: 30px; z-index: 15; }
+
+/* Button ---*/
+.ja-toppanel-button-wraper { margin: 0 10px; width: auto; }
+
+.ja-toppanel-panels .open {
+	background: #4faed2;
+	border-top: 1px solid #2985a8;
+	height: 30px;
+}
+
+.ja-toppanel-panels .open .open { border: none; }
+
+.ja-toppanel-button-wraper .btn-left { top: -1px; width: 142px; }
+
+.ja-toppanel-button-wraper .btn-left .ja-toppanel-button-l {
+	background: url("images/button-left.png") no-repeat left;
+	height: 23px;
+	width: 35px;
+}
+
+.ja-toppanel-button-wraper .btn-left .ja-toppanel-button-r {
+	background: url("images/button-right.png") no-repeat right;
+	height: 23px;
+	width: 35px;
+}
+
+.ja-toppanel-button-wraper .btn-left .ja-toppanel-button {
+	background: url("images/button-mid.png") repeat-x;
+	color: #FFFFFF;
+	float: left;
+	font-size: 85%;
+	height: 23px;
+	line-height: 20px;
+	overflow: hidden;
+	text-align: center;
+	width: 72px;
+}
+
+.ja-toppanel-button-wraper .btn-right .ja-toppanel-button-l,
+.ja-toppanel-button-wraper .btn-right .ja-toppanel-button-r,
+.ja-toppanel-button-wraper .btn-right .ja-toppanel-button { background: none; width: 0; }
+
+.ja-toppanel-button-wraper .btn-right .ja-toppanel-button { width: auto; }
+
+.ja-toppanel-button-wraper .btn-right input { float: left; margin: 5px 0 0; }
+
+.ja-toppanel-button-wraper .btn-right label { float: left; margin: 3px 0 0 5px; }
+
+/* TOP PANEL MODULES STYLE
+--------------------------------------------------------- */
+.ja-toppanel-content div.ja-moduletable, .ja-toppanel-content div.moduletable { margin: 0; }
+
+.ja-toppanel-content div.ja-moduletable .ja-box-ct, .ja-toppanel-content div.moduletable .ja-box-ct { padding: 0; }
+
+.ja-toppanel-content .ja-toppanel-article { padding: 20px 0; }
+
+.ja-toppanel-content h3 {
+	background: none !important;
+	margin: 5px 40px !important;
+	padding: 0 !important;
+}
+
+.ja-toppanel-content .ja-toppanel-article h3 { margin: 5px 0 !important; }
+
+.ja-toppanel-content h3 a { color: #fff; }
+
+.ja-toppanel-content .ja-box-ct ul {
+	color: #fff;
+	list-style: circle !important;
+	margin: 10px !important;
+	padding-left: 30px;
+}
+
+.ja-toppanel-content li li {
+	background: none !important;
+	list-style: circle !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	width: 100%;
+}
+
+.ja-toppanel-content li li a { color: #fff; line-height: 25px; }
+
+/* TOP PANEL DISPLAY IN COLUMNS
+--------------------------------------------------------- */
+.ja-toppanel-col li { float: left; width: 25%; }
+
+.ja-toppanel-col div.ja-moduletable, .ja-toppanel-col div.moduletable {
+	background: no-repeat scroll 15px 35px;
+	padding: 35px 10px;
+}
+
+.ja-toppanel-col div.ja-moduletable li, .ja-toppanel-col div.moduletable li { overflow: visible; }
+
+/* TOP PANEL DISPLAY IN ROWS
+--------------------------------------------------------- */
+.ja-toppanel-row li { clear: both; padding: 0 30px; }
+
+.ja-toppanel-row li ul { padding-left: 30px; }
+
+.ja-toppanel-row div.ja-moduletable, .ja-toppanel-row div.moduletable { background: no-repeat scroll 0 23px; padding: 20px 0; }

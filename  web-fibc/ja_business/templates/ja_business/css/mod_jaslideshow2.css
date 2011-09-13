@@ -1,0 +1,171 @@
+/* Son of Suckerfish Dropdowns
+---------------------------------------------------------
+Originally developed by Patrick Griffiths and Dan Webb
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+---------------------------------------------------------
+NOTE: After a deep research, we decide to divide this
+CSS into 2 parts. The first part will define the layout.
+The second part will define the visual look for this menu.
+---------------------------------------------------------*/
+/*
+# ------------------------------------------------------------------------
+# JA Business Template
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+#ja-slideshow div.ja-moduletable, #ja-slideshow div.moduletable {
+	padding: 0px;
+	margin: 0px;
+}
+.ja-slide-item img {
+	background: none;
+	position: relative;
+}
+.ja-slidewrap {
+	border: none;
+}
+
+.ja-slide-main {
+	margin-left: 25px;
+	margin-right: 25px;
+}
+
+.ja-slide-main-wrap {
+	top: 15px;
+}
+.ja-slide-desc {
+	position: relative;
+	z-index: 10;
+	color: #877460;
+	height: 170px;
+	width: 460px;
+	margin-left: 480px;
+}
+
+.ja-slide-desc a {
+	font-weight: bold;
+	font-size: 170%;
+	color: #d3bb99;
+	margin-top: 15px;
+	display: block;
+	font-style: italic;
+	text-decoration: none;
+}
+
+.ja-slide-desc a.readmore {
+	font-weight: normal;
+	font-size: 95%;
+	color: #2a1a10;
+	margin-top: 15px;
+	display: block;
+	text-align: center;
+	background: url(../images/readmore.gif) repeat-x left top ;
+	cursor: pointer;
+	font-style: normal;
+	border: solid 1px #d5c6b5; 
+	border-bottom: solid 1px #927d67;
+	float: left;
+	padding: 1px 8px;
+}
+
+.ja-slide-thumbs, .ja-slide-thumbs-mask, .ja-slide-thumbs-handles  {
+	width: 100%;
+}
+
+.ja-slide-thumbs-mask-left, .ja-slide-thumbs-mask-right {
+	background: none;
+	width: 100% !important;
+}
+
+#ja-slideshow .ja-slide-buttons{
+	position: relative;
+	top: -130px;
+	width: 100%;
+	left: 0px;	
+	font-size: 0px;
+	line-height: 0px;
+	text-indent: -9900px;
+}
+
+.ja-slide-buttons span {
+	background: none;
+	display: none;
+	margin: 0px;
+	padding:0px;
+	font-size: 0px;
+	line-height: 0px;
+}
+
+.ja-slide-buttons span.ja-slide-prev{
+	width: 19px;
+	height: 27px;
+	background: url(../images/prev.png) no-repeat left top;
+	display: block;
+}
+
+.ja-slide-buttons span.ja-slide-prev:hover{
+	background: url(../images/prev.png) no-repeat left bottom;
+}
+
+.ja-slide-buttons span.ja-slide-next{
+	width: 19px;
+	height: 27px;
+	background: url(../images/next.png) no-repeat left top;
+	display: block;
+	position: absolute;
+	right: 0px;
+}
+
+.ja-slide-buttons span.ja-slide-next:hover {
+	background: url(../images/next.png) no-repeat left bottom;
+}
+
+#ja-slideshow .ja-slide-thumbs-wrap {
+	margin-top: 0px;
+	background:none;
+	display: block;
+	position: relative;
+	top: 32px;
+}
+
+div.ja-slide-thumbs .ja-slide-thumb-inner, .ja-slide-thumbs-handles span, .ja-slide-thumbs-handles span.active {
+	background: url(../images/tab-slideshow-bg.png) no-repeat right 7px;
+	border: none;
+	margin-left: 0px;
+}
+
+.ja-slide-thumb-inner img {
+}
+#ja-slideshow .ja-slide-thumb img {
+	background: none;
+	border: none;
+	margin: 15px 5px 0px 0px;
+}
+.ja-slide-thumbs-wrap .active .ja-slide-thumb-inner {
+	background: url(../images/active-slideshow.png) no-repeat center top;
+	color: #fd8900;
+}
+
+.ja-slide-thumbs-wrap .active .ja-slide-thumb-inner h3 {
+	color: #fd8900 !important;
+}
+
+.ja-slide-thumbs-wrap .ja-slide-thumb-inner h3{
+	padding-left: 36px !important;
+	overflow: inherit;
+	font-family: Arial,Helvetica,sans-serif;
+	font-size: 13px;
+	padding-top: 24px !important;
+	color: #9e8974;
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5" method="upgrade">
+    <name>JA Facebook Plugin Social - Recent Activity</name>
+    <creationDate>12 Sep 2010</creationDate>
+    <author>JoomlArt</author>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>webmaster@joomlart.com</authorEmail>
+    <authorUrl>http://www.joomlart.com</authorUrl>
+    <version>1.0.0</version>
+     <description><![CDATA[<p>The Activity Feed plugin displays the most interesting recent   activity taking place on your site. Since the content is hosted by   Facebook, the plugin can display personalized content whether or not the   user has logged into your site. The activity feed displays stories both   when users <a href="http://developers.facebook.com/docs/reference/plugins/like">like</a> content on your site and when users share content from your site back   to Facebook. If a user is logged into Facebook, the plugin will be   personalized to highlight content from their friends. If the user is   logged out, the activity feed will show recommendations from your site,   and give the user the option to log in to Facebook.</p>
+<p>The plugin is filled with activity from the user's friends. If there   isn't enough friend activity to fill the plugin, it is backfilled with   recommendations. If you set the recommendations param to true, the   plugin is split in half, showing friends activity in the top half, and   recommendations in the bottom half. If there is not enough friends   activity to fill half of the plugin, it will include more   recommendations.</p>
+<p>You specify a domain to show activity for. The domain is matched   exactly, so a plugin with site=facebook.com would not include activity   from developers.facebook.com. You cannot currently aggregate across   multiple domains.</p>
+<p>The plugin is available either via a simple iframe you can drop into   your page, or if you are using the new <a href="http://developers.facebook.com/docs/reference/javascript/">JavaScript   SDK</a>, you can use the &lt;fb:activity&gt; XFBML tag.</p>]]></description>
+	
+     <files>
+      	<folder>tmpl</folder>
+		<filename>index.html</filename>
+		<filename module="mod_jafacebookactivity">mod_jafacebookactivity.php</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.mod_jafacebookactivity.ini</language>
+	</languages>
+	<params></params>
+	<params>
+		 	
+		<param name="site" type="text" default="joomlart.com" label="Domain" description="The domain to show activity for. In XFBML, defaults to the domain the plugin is on." />
+		<param name="width" type="text" default="300" label="Width" description="The width of the plugin in pixels." />
+		<param name="height" type="text" default="400" label="Height" description="The height of the plugin in pixels." />
+		
+		 <param name="header" type="radio" default="1" label="Show Header" description="Show the Facebook header on the plugin." >
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		 </param>
+	
+		<param name="colorscheme" type="list" default="light" label="Color Scheme" description="The color scheme of the plugin." >
+			<option value="light">light</option>
+			<option value="dark">dark</option>
+		  </param>
+	
+		<param name="font" type="list" default="" label="Font" description="The font of the plugin." >
+			<option value="">-Site Default-</option>
+			<option value="arial">arial</option>
+			<option value="lucida grande">lucida grande</option>
+			<option value="segoe ui">segoe ui</option>
+			<option value="tahoma">tahoma</option>
+			<option value="trebuchet ms">trebuchet ms</option>
+			<option value="verdana">verdana</option>
+		  </param>
+		<param name="border_color" type="text" default="" label="Border color" description="The border color of the plugin." />
+		
+		 <param name="recommendations" type="radio" default="0" label="Recommendations" description="Show recommendations" >
+			<option value="1">YES</option>
+			<option value="0">NO</option>
+		 </param>
+	</params>
+</install>

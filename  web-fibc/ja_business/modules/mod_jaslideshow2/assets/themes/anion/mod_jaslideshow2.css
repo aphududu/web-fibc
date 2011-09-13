@@ -1,0 +1,67 @@
+/* default: mod_jaslideshow2.css */
+.ja-slidewrap_anion {
+	border: 0;
+	overflow: hidden;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons .ja-slide-stop {
+	text-indent: -1000em;
+	background:
+		url('images/icon-stop.gif')
+		center center no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons .ja-slide-next {
+	text-indent: -1000em;
+	background:
+		url('images/icon-next.gif')
+		center center no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons .ja-slide-prev {
+	text-indent: -1000em;
+	background:
+		url('images/icon-prev.gif')
+		center center no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons .ja-slide-playback {
+	text-indent: -1000em;
+	background:
+		url('images/icon-playback.gif')
+		center center no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons .ja-slide-play {
+	text-indent: -1000em;
+	background:
+		url('images/icon-play.gif')
+		center center no-repeat;
+	height: 20px;
+	width: 20px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons {
+	background:
+		url('images/button-bg2.png')
+		left center no-repeat;
+	padding: 3px;
+}
+
+.ja-slidewrap_anion .ja-slide-buttons span {
+	padding: 2px 0;
+}

@@ -1,0 +1,69 @@
+/*
+# ------------------------------------------------------------------------
+# JA Business Template
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+body.bd .main { width: auto !important; }
+
+body.iphone #ja-search { top: 0px; }
+
+#ja-search form  {
+	-moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+	-webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.0);
+}
+
+#ja-search form input.button { display: none; }
+
+body.iphone #ja-search .inputbox { width: 99%; }
+
+h1.logo a { background-image: url(../../images/iphone-logo.png); }
+
+/* Blog View ---*/
+
+.img-border {
+	border: solid 1px #e3e3e3;
+	float: left;
+	margin: 5px 15px 5px 0;
+	padding: 4px;
+	max-width: 98%;
+}
+
+div.userBlock { margin-top: 0px; }
+
+div.userItemHeader h3.userItemTitle, div.userItemHeader h3.userItemTitle a,
+div.catItemHeader h3.catItemTitle, div.catItemHeader h3.catItemTitle a,
+div.itemHeader h2.itemTitle {
+	font-size: 14pt;
+	color: #DD6D14;
+	font-family: Helvetica,sans-serif;
+}
+
+div.itemRelated h3 { font-size: 14pt; }
+
+body.iphone div.userItemToolbar span { font-size: 85%; }
+
+.contact_email div { padding: 4px 0px; }
+
+.contact_email label {
+	width: 150px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.contact_email label#contact_email_copymsg { width: auto; }
+
+div.itemCommentsForm form label.formName, 
+div.itemCommentsForm form label.formEmail, 
+div.itemCommentsForm form label.formUrl { font-size: 12px; }
+
+div.itemCommentsForm form input#submitCommentButton { font-size: 12px; }

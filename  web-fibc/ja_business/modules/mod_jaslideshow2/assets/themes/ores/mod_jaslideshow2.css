@@ -1,0 +1,235 @@
+/*
+# ------------------------------------------------------------------------
+# JA Ores template for Joomla 1.5.x
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2009 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+# ------------------------------------------------------------------------
+*/
+.ja-slidewrap_ores {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	border: 0px;
+}
+
+.ja-slidewrap_ores .ja-slide-main-wrap {
+	position: relative;
+	overflow: hidden;
+	background:url("images/slideshow-bg.png") no-repeat scroll left bottom transparent;
+}
+
+.ja-slidewrap_ores .ja-slide-main {
+	position: absolute;
+	z-index: 1;
+}
+
+.ja-slidewrap_ores .ja-slide-item {
+	display: block;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	margin: 0;
+}
+
+.ja-slidewrap_ores .ja-slide-item img {
+	background: #000000;
+	border: 1px solid #1C1C1C;
+	padding: 4px;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-wrap {
+	padding:25px 0;
+    position:absolute;
+	clear: both;
+	overflow: hidden;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-wrap {
+	background: url(images/slide-thumb-bg.png) left top repeat-y;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs,.ja-slidewrap_ores  .ja-slide-thumbs-mask, .ja-slidewrap_ores .ja-slide-thumbs-handles {
+	position: absolute;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	width: 5000px;
+}
+
+.ja-slidewrap_ores .ja-slide-descs {
+	display: none;	
+}
+
+.ja-slidewrap_ores .ja-slide-thumb,.ja-slidewrap_ores  .ja-slide-thumbs-handles span {
+	display: block;
+	margin: 0;
+	float: left;
+	cursor: pointer;
+}
+
+.ja-slidewrap_ores .ja-vertical_right .active {
+	background:transparent url(images/arrow-bg.png) no-repeat scroll left 35px;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-handles span {
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-mask-left,
+.ja-slidewrap_ores .ja-slide-thumbs-mask-right,
+.ja-slidewrap_ores .ja-slide-thumbs-mask-center {
+	float: left;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-mask-left, .ja-slidewrap_ores .ja-slide-thumbs-mask-right{
+	background: #000000;
+}
+
+.ja-slidewrap_ores .but_prev,.ja-slidewrap_ores  .but_next {
+	background: #000000;
+	position: absolute;
+	top: 0;
+	z-index: 99;
+}
+
+.ja-slidewrap_ores .but_prev {
+	left: 0;
+}
+.ja-slidewrap_ores .but_prev:hover, .ja-slidewrap_ores .but_next:hover {
+	cursor: pointer;
+}
+
+.ja-slidewrap_ores .but_next {
+	right: 0;
+}
+.ja-slidewrap_ores .maskDesc {
+	display: block;
+	background: none;
+	position: absolute;
+	z-index: 100;
+	cursor: pointer;
+	padding-left:5px;
+}
+
+.ja-slidewrap_ores .ja-slide-desc {
+	padding: 120px 0 20px 0;
+	color: #101010;
+	font-size: 100%;
+}
+
+.ja-slidewrap_ores .maskDesc .ja-slide-desc br {
+	display: none;
+}
+
+.ja-slidewrap_ores .maskDesc  .ja-slide-desc h3 {
+	margin: 0;
+	padding: 0;
+}
+
+.ja-slidewrap_ores .maskDesc  a.readon {
+	bottom: 10px;
+	color: #810C46;
+	display: none;
+	font-weight: bold;
+	font-size: 100%;
+	position: absolute;
+	padding: 3px 10px 3px 0;
+	right: 20px;
+}
+
+.ja-slidewrap_ores .maskDesc .ja-slide-desc a span {
+	color: #101010;
+	font-size: 360%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.ja-slidewrap_ores .maskDesc  a.readon:hover,.ja-slidewrap_ores .maskDesc a.readon:active, .ja-slidewrap_ores .maskDesc a.readon:focus {
+	color: #FFFFFF;
+}
+
+.ja-slidewrap_ores .ja-slide-buttons {
+	z-index: 900;
+}
+
+.ja-slidewrap_ores .ja-slide-buttons span {
+	background: #000000;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	margin-right: 5px;
+	padding: 2px 5px;
+	cursor: pointer;
+}
+
+.ja-slidewrap_ores .ja-slide-thumb-inner {
+	background-color: transparent;
+	border: 0px;
+	color: #101010;
+	padding-right: 0;
+	padding-bottom: 20px;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-wrap .active .ja-slide-thumb-inner {
+	background: transparent;
+	color: #101010;
+}
+
+.ja-slidewrap_ores .ja-slide-thumbs-wrap .active .ja-slide-thumb-inner h3 {
+	color:#FFFFFF !important;
+}
+
+.ja-slidewrap_ores .ja-slide-thumb-inner h3{
+	font-weight: normal;
+	font-size: 200%;
+	padding-top: 30px !important;
+}
+
+.ja-slidewrap_ores h3 {
+	color: #101010 !important;
+	background-image: none !important;
+	position: absolute;
+	left: 0;
+	top: 100px;
+}
+
+.ja-slidewrap_ores .ja-slide-thumb-inner h3 {
+	position: static !important;
+	border-bottom:0px solid;
+}
+
+.ja-slidewrap_ores .ja-slide-desc a:hover { text-decoration: none; }
+
+.ja-slidewrap_ores .ja-vertical_right .ja-slide-thumb,.ja-slidewrap_ores  .ja-vertical_right .ja-slide-thumbs-handles span {
+	margin-bottom: 10px !important;
+}
+.ja-vertical_right .active {
+background:url("images/arrow-bg.png") no-repeat scroll left 35px transparent;
+}
+.ja-slidewrap_ores
+{
+	background:url("images/shadow.png") repeat-x scroll left top #FB8819;	
+	background-color:#F07000;
+	}
+.ja-slidewrap_ores .ja-slidewrapores
+{
+	background:url("images/shadow-bot.png") repeat-x scroll left bottom transparent;	
+}
+
+.ja-slidewrap_ores .ja-slide-thumb-inner h3 ,.ja-slidewrap_ores  .maskDesc .ja-slide-desc,.ja-slidewrap_ores .ja-slide-thumb-inner,.ja-slidewrap_ores .ja-slide-thumbs-wrap .active .ja-slide-thumb-inner, .ja-slidewrap_ores #ja-slideshow h3,.ja-slidewrap_ores .maskDesc .ja-slide-desc a span  {
+color:#FFFFFF !important;
+}
+
+.btlink a {
+	background:url("images/grad4.gif") repeat-x scroll left top transparent;
+	border-color:-moz-use-text-color #FFFFFF #FFFFFF;
+	border-right:1px solid #FFFFFF;
+	border-style:none solid solid;
+	border-width:0 1px 1px;
+	color:#101010;
+	font-family:Georgia,"Times New Roman",Times,serif;
+	font-size:140%;
+	padding:9px 12px;
+}

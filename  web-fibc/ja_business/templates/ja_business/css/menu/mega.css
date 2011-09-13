@@ -1,0 +1,157 @@
+.ja-megamenu ul.level0 li { padding: 0 5px; }
+
+.ja-megamenu ul.level0 li a {
+	color: #A38D80;
+	font-family: 'TitilliumText22LLight';
+	font-size: 15px;
+	margin-top: 10px !important;
+	padding: 10px 10px 10px;
+}
+
+.ja-megamenu ul.level0 li.haschild-over a {
+	background: #e5ded8;
+	border: 0;
+	border-bottom: 0;
+	color: #703a19 !important;
+	padding: 9px 10px 10px;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	box-shadow: 0 -2px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 -2px 3px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 -2px 3px rgba(0, 0, 0, .4);
+}
+
+.ja-megamenu a.over, .ja-megamenu a.active { color: #fd8900 !important; }
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Styling ---*/
+.ja-megamenu ul.level1 li.mega { background: url(../../images/subnav-sep2.gif) repeat-x left bottom; }
+
+.ja-megamenu ul.level1 li.mega a.mega { padding-left: 0; padding-right: 0; }
+
+.ja-megamenu ul.level1 li.first { border-top: 0; }
+
+.ja-megamenu ul.level1 li.mega a.mega {
+	border: 0;
+	font-family: Arial, Helvetica, sans-serif !important;
+	font-size: 100%;
+	color: #73695c !important;
+	text-shadow: 0 1px 0 #f4f1ef;
+}
+
+.ja-megamenu ul.level1 li.haschild a.mega span.menu-title {
+	background: url(../../images/arrow-dropline.png) no-repeat right 8px;
+}
+
+.ja-megamenu ul.level1 li a.mega,
+.ja-megamenu ul.level1 li.over a.mega {
+	border: 0;
+	margin-top: 0 !important;
+	border-raidus: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+.ja-megamenu ul.level1 li.over a.over { color: #dd6d14 !important; }
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.ja-megamenu .childcontent-inner {
+	background: #e5ded8;
+	border: 1px solid #f4efea;
+	border-top: 0;
+	color: #73695c;
+	border-radius: 0px 6px 6px 6px;
+	-moz-border-radius: 0px 6px 6px 6px;
+	-webkit-border-radius: 0px 6px 6px 6px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+}
+
+.ja-megamenu .level1 .childcontent-inner {
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+}
+
+.ja-megamenu .childcontent .ja-moduletable {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	color: #6d625b;
+}
+
+.ja-megamenu .childcontent .ja-moduletable h3 {
+	background: url(../../images/subnav-sep2.gif) repeat-x left bottom;
+	border-bottom: 0;
+}
+
+#bd .ja-megamenu .childcontent .ja-moduletable ul li {
+	border-bottom: 1px dotted #d2c7be;
+	margin-bottom: 0;
+	padding: 10px 0;
+}
+
+#bd .ja-megamenu .childcontent .ja-moduletable ul li:last-child {
+	border: 0;
+}
+
+#bd .ja-megamenu .childcontent .ja-moduletable .lcCommentDate {
+	background: url(../../images/icon-date.png) no-repeat 0px 5px;
+	color: #91887d;
+	padding-left: 15px;
+	text-shadow: 0 1px 0 #f4f1ef;
+}
+
+#bd .ja-megamenu .childcontent a.lcAvatar img {
+	margin-top: 5px;
+	padding: 3px;
+}
+
+#bd .ja-megamenu .childcontent .ja-moduletable a {
+	background: none;
+	border: 0;
+	color: #6d625b !important;
+	font-size: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	margin: 0 !important;
+	padding: 0;
+	text-shadow: 0 1px 0 #f4f1ef;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#bd .ja-megamenu .childcontent .ja-moduletable a:hover { color: #dd6d14 !important; }
+
+/* Grouped --- */
+.ja-megamenu .group-title {
+	background: url(../../images/subnav-sep2.gif) repeat-x left bottom;
+	border-bottom: 0;
+	margin-bottom: 5px;
+}
+
+.ja-megamenu .group-title a { font-size: 115% !important; }
+
+.ja-megamenu .group-title .menu-title {
+	color: #3b8111;
+	font-family: 'TitilliumText22LLight';
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.ja-megamenu .group-title .menu-desc {
+	color: #999;
+	padding-left: 0 !important;
+}

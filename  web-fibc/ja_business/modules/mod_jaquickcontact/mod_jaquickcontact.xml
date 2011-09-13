@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>JA Quickcontact</name>
+	<author>Joomlart.com</author>
+	<creationDate>Apr 2010</creationDate>
+	<license>Copyrighted Commercial Software.</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+    <authorUrl>www.joomlart.com</authorUrl>
+    <version>1.0.1</version>
+	<description>Form JL Quickcontact</description>
+	<files>
+		<filename module="mod_jaquickcontact">mod_jaquickcontact.php</filename>
+		<folder module="mod_jaquickcontact">tmpl</folder>
+		<folder module="mod_jaquickcontact">admin</folder>
+	</files>
+	<languages>
+        <language tag="en-GB">en-GB.mod_jaquickcontact.ini</language>
+    </languages>
+	<params>
+		<param name="class_suffix" type="text" default=""  label="MODULE CLASS SUFFIX" description="MODULE CLASS SUFFIX DES" />
+		<param name="sender_label" type="text" default="Username" label="SENDER NAME LABEL" size="50" description="SENDER NAME LABEL DES" />
+		<param name="email_label" type="text" default="Email" label="SENDER EMAIL LABEL" size="50" description="SENDER EMAIL LABEL DES" />
+		<param name="subject_label" type="text" default="Subject" label="EMAIL SUBJECT LABEL" size="50" description="EMAIL SUBJECT LABEL DES" />
+		<param name="message_label" type="text" default="Message" label="MESSAGE LABEL" size="50" description="MESSAGE LABEL" />
+		<param name="recipient" type="text" default="" label="RECIPIENT" size="50" description="RECIPIENT DES" />
+		<param name="subject" type="text" default=""  size="50" label="SUBJECT" description="EMAIL SUBJECT" />
+		<param name="show_email_copy" type="list" default="0"  label="SEND ME A COPIED EMAIL" description="ALLOW COPIED EMAIL DES" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="thank_msg" type="textarea" cols="50" rows="5" size="120"  default="Thank you!"  label="THANKS MESSAGE" description="THANKS MESSAGE DES" />
+		<param name="max_chars" type="text" default="1000"  label="CHARACTER LIMIT" description="CHARACTER LIMIT DES" />
+		<param name="redirect_url" type="text" default="index.php"  size="50" label="RETURN URL" description="RETURN URL DES" />
+		<param name="intro_text" type="textarea" default="Contact us"  label="INTRO TEXT" cols="50" rows="5" size="120" description="INTRO TEXT DES" />
+		<param name="use_ajax" type="list" default="0"  label="Use ajax sending" description="USE_AJAX_DESC" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

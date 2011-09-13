@@ -1,0 +1,17 @@
+/*
+# ------------------------------------------------------------------------
+# JA Slideshow II module for Joomla 15
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+# Author: JoomlArt.com
+# Websites: http://www.joomlart.com - http://www.joomlancers.com.
+# ------------------------------------------------------------------------
+*/
+
+.ja-slidewrap {
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}

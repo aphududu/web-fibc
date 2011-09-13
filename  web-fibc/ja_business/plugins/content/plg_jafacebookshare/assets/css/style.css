@@ -1,0 +1,21 @@
+div.ja-facebookshare-button-home, 
+div.ja-facebookshare-button{float: left; margin: 10px 10px;}
+
+div.ja-facebookshare-box_count-home, 
+div.ja-facebookshare-box_count{float: left;margin: 10px 0px 10px 0px;}
+
+div.ja-facebookshare-button_count-home, 
+div.ja-facebookshare-button_count{float: left;margin: 10px 0px 10px 0px;}
+
+div.ja-facebookshare-icon_link-home, 
+div.ja-facebookshare-icon_link{float: left;margin: 10px 0px 10px 0px;}
+
+div.ja-facebookshare-icon-home, 
+div.ja-facebookshare-icon{float: left;margin: 10px 0px 10px 0px;}
+
+.fb_share_count_hidden .fb_share_count_nub_top, 
+.fb_share_count_hidden .fb_share_count_top, 
+.fb_share_count_hidden .fb_share_count_nub_right, 
+.fb_share_count_hidden .fb_share_count_right {
+	visibility: visible !important;
+}

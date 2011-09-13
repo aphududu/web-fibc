@@ -1,0 +1,83 @@
+body.bd .main { width: auto !important; }
+
+body.bd #ja-wrapper { min-width: 200px !important; }
+
+body.handheld #ja-header {
+	z-index: 9;
+}
+h1.logo {
+	width: 210px !important;
+	height: 66px !important;
+}
+h1.logo a {
+	margin: 0px auto;
+}
+
+body.com_k2 #ja-content-main {
+	background: none;
+	padding: 0;
+	border: 0;
+}
+
+p.readmore a {
+	background-position: left center;
+}
+
+body.handheld .ja-content-main .counter span {
+	background: none;
+	color: #333;
+}
+body.handheld .ja-breadcrums {
+	border-color: #333;
+}
+
+body.handheld .pagination .pagination ul li.pagination-next {
+	right: 75px;
+}
+
+body.handheld #form-login ul {
+	margin-top: 15px !important;
+}
+
+form.search {
+	background: #fff;
+	width: 98%;
+	margin: auto;
+	-moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+	-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+	border: none;
+	height: auto;
+}
+
+body.handheld #ja-search .inputbox  {
+	width: 99%; 
+	padding-left: 10px;
+	border: solid 1px #ddd;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+body.handheld #ja-search:hover .inputbox, body.handheld #ja-search:focus .inputbox {
+	background: #ffffcc;
+}
+
+.hasTip img {
+	position: absolute;
+	left: 10px;
+	width: 18px;
+	height: 18px;
+	top: 20px;
+}
+
+/* Blog View ---*/
+.article-content img.img-border{
+	max-width: 98%;
+}
+div.itemCommentsForm form label.formName, 
+div.itemCommentsForm form label.formEmail, 
+div.itemCommentsForm form label.formUrl {
+	font-size: 12px;
+}
+
+div.itemCommentsForm form input#submitCommentButton  {
+	font-size: 12px;
+}

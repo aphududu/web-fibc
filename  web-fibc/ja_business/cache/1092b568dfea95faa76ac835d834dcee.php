@@ -1,0 +1,2 @@
+<?php die("Access Denied"); ?>
+a:2:{s:6:"output";s:0:"";s:6:"result";a:1:{i:0;O:8:"stdClass":7:{s:2:"id";s:19:"1.1316641130363E+17";s:6:"source";s:63:"<a href="http://www.tweetdeck.com" rel="nofollow">TweetDeck</a>";s:10:"created_at";s:30:"Mon Sep 12 08:25:49 +0000 2011";s:4:"text";s:126:"3 more templates updated for #joomla 1.7 http://t.co/e3wcTuZ JA Social, Teline IV & Teline III released. JA Ores to come soon.";s:4:"name";s:8:"JoomlArt";s:11:"screen_name";s:8:"JoomlArt";s:17:"profile_image_url";s:63:"http://a3.twimg.com/profile_images/94834978/joomlart_normal.jpg";}}}

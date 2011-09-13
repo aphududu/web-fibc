@@ -1,0 +1,91 @@
+/*
+# ------------------------------------------------------------------------
+# JA Business Template
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+
+br.clearfix { display: none !important; line-height: normal !important; }
+
+.button, button { overflow: visible; height: auto; line-height: normal !important; }
+
+#ja-topheader div.button p { padding-top: 25px; }
+
+#ja-navhelper #ja-search {
+	position: relative;
+	width: 265px;
+	top: 0px;
+}
+
+#ja-navhelper #ja-bottombar {
+	float: none;
+	position: absolute;
+	right: 20px;
+	top: 8px;
+}
+
+.ja-links {
+	padding-right: 10px;
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+.business-blog.catItemView div.catItemReadMore { top: -39px; }
+
+.ja-toppanel-button-wraper .right input { margin-top: 0px; padding: 0px !important; }
+
+div.k2TagCloudBlock { zoom: 1; }
+
+div.subCategory { margin: 0 26px !important; }
+
+/* Pagination ---*/
+.pagination .pagination ul li { line-height: 0; }
+
+.pagination .pagination ul li span,
+.pagination .pagination ul li strong {
+	padding: 0 7px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.com_search .pagination ul li { line-height: 0; }
+
+.com_search .pagination ul li span,
+.com_search .pagination ul li strong {
+	padding: 0 7px;
+	height: 20px;
+}
+
+#component-contact div.contact_email label { margin-top: 1px; }
+
+#component-contact div.contact_email #contact_textmsg { margin-bottom: -1px; }
+
+br.clearfix { display: none !important; }
+
+div.k2UsersBlock ul li.odd,
+div.k2UsersBlock ul li.even { display: inline; width: 222px; zoom: 1; }
+
+#form-login #form-login-remember .inputbox {
+	background: none;
+	border: 0;
+	outline: none;
+}
+
+input[type="radio"] { border: 0; }
+
+.ja-megamenu ul.level1 li.mega {
+	background: url(../images/subnav-sep2.gif) repeat-x left bottom !important;
+	zoom: 1;
+}

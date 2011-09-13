@@ -1,0 +1,134 @@
+/* Son of Suckerfish Dropdowns
+---------------------------------------------------------
+Originally developed by Patrick Griffiths and Dan Webb
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+---------------------------------------------------------
+NOTE: After a deep research, we decide to divide this
+CSS into 2 parts. The first part will define the layout.
+The second part will define the visual look for this menu.
+---------------------------------------------------------*/
+/*
+# ------------------------------------------------------------------------
+# JA Business Template
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+#dsq-content .dsq-textarea .dsq-textarea-wrapper, 
+#dsq-content .dsq-input-wrapper {
+	background: url(../images/comment/comment-bg.gif) repeat-x left top #d4ccc5 !important;
+	border: solid 1px #c7bfb6;
+	color: #ddd7d1;
+}
+
+#dsq-content .dsq-post-footer .dsq-button {
+	background: url(../images/comment/button-bg.gif) repeat-x left top;
+	text-align: center;
+	color: #1b2f04;
+	padding: 4px 10px;
+	margin: 0px;
+	border: none !important;
+}
+button.dsq-button, button.dsq-button-small {
+	border: none !important;
+}
+#dsq-new-post h3 {
+	color: #3B8111;
+	font-weight: normal;
+	font-size: 150%;
+	background: url(../images/comment/line-bg.gif) repeat-x left top;
+	padding-top: 12px;
+}
+
+#dsq-comments-title h3 {
+	color: #3B8111;
+	font-weight: normal;
+	font-size: 150%;
+	background: url(../images/comment/line-bg.gif) repeat-x left top;
+	margin-top: 20px;
+	padding-top: 12px;
+}
+
+#dsq-content .dsq-comment-header {
+	background: url(../images/comment/navigations-bg.gif) repeat-x left bottom #e8e3dd !important;
+	border: none !important;
+	border-bottom: solid 1px #c7c2ba !important;
+	padding: 6px;
+}
+
+#dsq-content .dsq-comment-header-time a,
+#dsq-content .dsq-comment-header-time a:hover,
+#dsq-content .dsq-comment-header-time a:focus,
+#dsq-content .dsq-comment-header-time a:active {
+	border-bottom: none;
+	color: #816f66;
+}
+
+#dsq-content .dsq-comment-header cite {
+	color: #755a35 !important;
+	font-size: 130% !important;
+}
+
+#dsq-content .dsq-append-post .dsq-post-area h3 {
+	color: #3B8111;
+	font-weight: normal;
+	font-size: 150%;
+}
+
+#dsq-content .dsq-like button.dsq-button-small {
+	background: url(../images/comment/icon-like.png) no-repeat left center;
+	border: none;
+	color: #d8a47c;
+	text-decoration: underline;
+	padding-left: 13px;
+}
+
+#dsq-content .dsq-comment-footer-reply button.dsq-button-small {
+	background: url(../images/comment/icon-reply.png) no-repeat left center;
+	border: none;
+	color: #d8a47c;
+	text-decoration: underline;
+	padding-left: 13px;
+}
+div.dsq-textarea {
+	border: solid 1px red;
+	background: yellow !important;
+}
+textarea.placeholder-grey {
+	color: #8b8077;
+	background: red !important;
+}
+
+#dsq-content .dsq-trackback-url{
+	width: 350px;
+	text-align: left;
+}
+
+#dsq-content iframe {
+	background: #fff !important;
+}
+
+#dsq-content #dsq-global-toolbar .dsq-thread-like {
+	text-decoration: none !important;
+}
+
+#dsq-content #dsq-global-toolbar .toolbar-item {
+	font-size: 0px !important;
+	line-height: 0px;
+	text-decoration: none !important;
+}
+
+#dsq-content #dsq-toolbar-dropdown #dsq-toolbar-dropdown-wrap{
+	z-index: 2000;
+}
+ 

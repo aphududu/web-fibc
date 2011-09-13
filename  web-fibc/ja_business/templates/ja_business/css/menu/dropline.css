@@ -1,0 +1,175 @@
+/*
+# ------------------------------------------------------------------------
+# JA Business Template
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* STYLING THE MENU
+-----------------------------------*/
+#jasdl-mainnav li { padding: 0 5px; }
+
+#jasdl-mainnav li a {
+	color: #A38D80;
+	font-family: 'TitilliumText22LLight';
+	font-size: 15px;
+	margin-top: 10px;
+	padding: 10px 10px 11px;
+}
+
+#jasdl-mainnav li a:hover,
+#jasdl-mainnav li a.active:hover {
+	color: #fd8900;
+}
+
+#jasdl-mainnav li a.active {
+	background: #473329;
+	color: #fd8900;
+	border-radius: 5px 5px 0 0;
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	box-shadow: 0 -2px 3px rgba(0, 0, 0, .4);
+	-moz-box-shadow: 0 -2px 3px rgba(0, 0, 0, .4);
+	-webkit-box-shadow: 0 -2px 3px rgba(0, 0, 0, .4);	
+}
+
+#jasdl-mainnav ul { float: left; margin-bottom: -1px; }
+
+#jasdl-mainnav li.active:sfhover { background: none; }
+
+#jasdl-mainnav li a span.menu-title { padding: 0px; }
+
+#jasdl-mainnav li.haschild  a span.menu-title, 
+#jasdl-mainnav li.haschild:hover a span.menu-title {
+	background: url(../../images/arrow3.png) no-repeat scroll right center;
+	padding-left: 0px;
+	padding-right: 12px;
+}
+
+#jasdl-mainnav li.haschild  a:hover span.menu-title, 
+#jasdl-mainnav li.haschild:hover a:hover span.menu-title,
+#jasdl-mainnav li.active.haschild a.active:hover span.menu-title, 
+#jasdl-mainnav li.active.haschild:hover a.active:hover span.menu-title {
+	background: url(../../images/arrow7.png) no-repeat scroll right center;
+}
+
+#jasdl-mainnav li.active.haschild a.active span.menu-title {
+	background: url(../../images/arrow5.png) no-repeat scroll right center;
+}
+
+/* Sub Nav ---*/
+#ja-subnav {
+	background: url(../../images/subnav-bg.gif) repeat-x left top #473329;
+	border-bottom: 1px solid #110d0b;
+}
+
+#ja-subnav ul li {
+	margin: 0;
+	padding: 8px 5px;
+}
+
+#ja-subnav ul li.last-item { background: none; }
+#ja-subnav ul li.first-item a { padding-left: 10px; }
+
+#ja-subnav ul li a {
+	color: #A38D80;
+	display: block;
+	padding: 7px 10px;
+	text-shadow: 0 1px 0 #261c17;
+}
+
+#ja-subnav ul li a:hover { color: #fadd67; }
+
+#ja-subnav ul li a.active,
+#ja-subnav ul li.active a.active, 
+#ja-subnav ul li.active a.active:hover, 
+#ja-subnav ul li.active a.active:active, 
+#ja-subnav ul li.active a.active:focus {
+	background: #35271f;
+	color: #d8b784;
+	font-weight: bold;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .5) inset;
+	-moz-box-shadow: 0 0 3px rgba(0, 0, 0, .5) inset;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .5) inset;
+}
+
+#ja-subnav ul li.haschild a.haschild span.menu-title {
+	background: url(../../images/arrow8-dropline.png) no-repeat scroll right center;
+}
+
+#ja-subnav ul li.active.haschild a.active.haschild span.menu-title {
+	background: url(../../images/arrow-dropline-hv.png) no-repeat scroll right center;
+}
+
+#ja-subnav ul li.haschild a.haschild:hover span.menu-title,
+#ja-subnav ul li.active.haschild:hover a.active.haschild:hover span.menu-title {
+	background: url(../../images/arrow5.png) no-repeat scroll right center;
+}
+
+/* Sub Nav (lv2) ---*/
+#ja-subnav ul li ul {
+	background: #554239;
+	border: 1px solid #403129;
+	border-top: 0;
+	color: #A38D80;
+	padding: 0;
+	top: 3.5em;
+	border-radius: 0 0 5px 5px;
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+	-moz-box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+	-webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, .3);
+}
+
+#ja-subnav li.first-item { margin-left: 0 !important; }
+
+#ja-subnav li.first-item a { padding-left: 0; }
+
+#ja-subnav ul li ul li { background: none; border-top: 1px solid #5f4b42; padding: 0; }
+
+#ja-subnav ul li ul li.first-item { border-top: 0; }
+
+#ja-subnav ul li ul li a {
+	color: #A38D80;
+	font-size: 98%;
+	padding: 5px 10px !important;
+}
+
+#ja-subnav ul li ul li a:hover,
+#ja-subnav ul li ul li a:active { color: #fadd67; }
+
+#ja-subnav ul li ul li.active a.active,
+#ja-subnav ul li ul li.active a.active:hover, 
+#ja-subnav ul li ul li.active a.active:active, 
+#ja-subnav ul li ul li.active a.active:focus {
+	background: none;
+	color: #fd8900;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#ja-subnav ul li ul li a span.menu-title,
+#ja-subnav ul li ul li a:hover span.menu-title { background: none; }
+
+#ja-subnav ul li ul li.haschild a.haschild span.menu-title,
+#ja-subnav ul li ul li.haschild:hover a.haschild:hover span.menu-title,
+#ja-subnav ul li ul li.active.haschild a.active.haschild span.menu-title,
+#ja-subnav ul li ul li.active.haschild:hover a.active.haschild:hover span.menu-title {
+	background: url(../../images/arrow6.png) no-repeat scroll right center;
+}

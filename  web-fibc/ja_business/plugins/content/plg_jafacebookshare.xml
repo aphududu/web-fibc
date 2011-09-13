@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>Content - JA Facebook Share</name>
+	<author>JoomlArt.com</author>
+	<creationDate>Nov 2010</creationDate>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<copyright>Copyright (C) Copyright © 2005 - 2010 JoomlArt.com. All rights reserved.</copyright>
+	<license>GNU/GPL V2 for PHP files. Read Terms of Service for details</license>
+	<version>1.0.3</version>
+	<description>JA FACEBOOK SHARE BUTTON PLUGIN DESC</description>
+	<files>
+		<filename plugin="plg_jafacebookshare">plg_jafacebookshare.php</filename>
+		<folder>plg_jafacebookshare/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_plg_jafacebookshare.ini</language>
+	</languages>
+	<params name="basic" addpath="/plugins/content/plg_jafacebookshare/elements">
+		<param 
+			name="group" 
+			type="japaramhelper" 
+			function="@group" level="3">
+				<option for="source" value="both" hideRow="true">catsid,k2catsid</option>
+				<option for="source" value="com_k2" hideRow="true">k2catsid</option>
+				<option for="source" value="com_content" hideRow="true">catsid</option>
+		</param>		
+		<param 
+			name="settingcontent" 
+			type="japaramhelper" 
+			default="" 
+			function="@title" 
+			label="CONTENT SETTINGS" 
+			description="CONTENT SETTINGS" level="2"/>		
+		<param 
+			name="source" 
+			type="radio" 
+			default="" 
+			level="3"
+			label="Enable the Plugin for" 
+			description="ENABLE THE PLUGIN FOR DESC">
+				<option value="both">Both</option>
+				<option value="com_k2">K2</option>
+				<option value="com_content">Joomla Content</option>
+		</param>
+		
+		<param 
+			name="catsid" 
+			type="japaramhelper"
+			subtype="categories" 
+			default=""
+			level="3"
+			extension="com_content"
+			label="Select categories" 
+			multiple="true"
+			size="5"
+			description="Select categories desc" >
+		</param>
+		
+		<param 
+			name="k2catsid" 
+			type="categoryK2" 
+			default="" 
+			level="3"
+			label="Select K2 categories" 
+			description="Select K2 categories desc" />
+		
+		<param 
+			name="settingdisplay" 
+			type="japaramhelper" 
+			default="" 
+			level="2"
+			function="@title" 
+			label="Display Settings" 
+			description="Display Settings"/>
+		<param 
+			name="position" 
+			type="list" 
+			default="onContentBeforeDisplay" 
+			label="Position" 
+			level="3"
+			description="Position Desc" >
+				<option value="onBeforeDisplay">Before Display</option>
+				<option value="onAfterDisplayTitle">After Title Display</option>
+				<option value="onBeforeDisplayContent">Before Content Display</option>
+				<option value="onAfterDisplayContent">After Content Display</option>
+				<option value="onAfterDisplay">After Display</option>
+				
+				<option value="onK2BeforeDisplay">K2 Before Display</option>
+				<option value="onK2AfterDisplayTitle">K2 After Title Display</option>
+				<option value="onK2BeforeDisplayContent">K2 Before Content Display</option>
+				<option value="onK2AfterDisplayContent">K2 After Content Display</option>
+				<option value="onK2AfterDisplay">K2 After Display</option>
+		</param>		
+		<param 
+			name="display_on_list" 
+			type="radio" 
+			default="1" 
+			label="show on list pages" 
+			description="show on list pages desc" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		
+		<param 
+			name="display_on_home" 
+			type="radio" 
+			default="1" 
+			level="3"
+			label="DISPLAY ON FRONTPAGE" 
+			description="DISPLAY ON FRONTPAGE DESC" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>		
+		
+		<param 
+			name="app_id" 
+			type="text" 
+			default="" 
+			size="30" 
+			label="Facebook Application Id"
+			description="FACEBOOK APPLICATION ID DESC" />
+			
+		<param 
+			name="type" 
+			type="list" 
+			default="box_count" 
+			label="Style of Button on Detail Page" 
+			description="STYLE OF BUTTON DESC" >
+				<option value="button"><![CDATA[Button (56x18 pixels)]]></option>
+				<option value="box_count"><![CDATA[Button with count system above (57x57 pixels)]]></option>
+				<option value="button_count"><![CDATA[Button with count system beside (96x18 pixels)]]></option>
+				<option value="icon_link"><![CDATA[Icon + Link (51x15 pixels)]]></option>
+				<option value="icon"><![CDATA[Icon (18x15 pixels)]]></option>
+		</param>
+		
+		<param 
+			name="type_list" 
+			type="list" 
+			default="button_count" 
+			label="Style of Button on List page" 
+			description="STYLE OF BUTTON ON LIST PAGE DESC" >
+				<option value="button"><![CDATA[Button (56x18 pixels)]]></option>
+				<option value="box_count"><![CDATA[Button with count system above (57x57 pixels)]]></option>
+				<option value="button_count"><![CDATA[Button with count system beside (96x18 pixels)]]></option>
+				<option value="icon_link"><![CDATA[Icon + Link (51x15 pixels)]]></option>
+				<option value="icon"><![CDATA[Icon (18x15 pixels)]]></option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,122 @@
+/*
+# ------------------------------------------------------------------------
+# JA Business Template
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2010 JoomlArt.com. All Rights Reserved.
+# @license - PHP files are GNU/GPL V2. CSS / JS are Copyrighted Commercial,
+# bound by Proprietary License of JoomlArt. For details on licensing, 
+# Please Read Terms of Use at http://www.joomlart.com/terms_of_use.html.
+# Author: JoomlArt.com
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# Redistribution, Modification or Re-licensing of this file in part of full, 
+# is bound by the License applied. 
+# ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+#ja-toppanel {	left: 0; z-index: 900; }
+
+#ja-toppanel .ja-toppanel-wraper {
+	background: none;
+	border: 0;
+	padding: 20px 0 0px;
+}
+
+#ja-toppanel .ja-toppanel-content { color: #877460; }
+
+#ja-toppanel .ja-toppanel-content ul.ja-toppanel-col li {
+	float: left;
+	padding: 0;
+}
+
+#ja-toppanel .ja-toppanel-content ul.ja-toppanel-col li.first-item { width: 45%; }
+#ja-toppanel .ja-toppanel-content ul.ja-toppanel-col li.last-item { width: 54.9%; }
+
+#ja-toppanel ul.ja-toppanel-col li div.ja-moduletable {
+	background: none;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+#ja-toppanel ul.ja-toppanel-col li div.ja-moduletable h3 {
+	border: 0;
+	color: #f3c685;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+#ja-toppanel div.form-info { padding: 0 0 20px; font-style: italic; }
+
+#ja-toppanel .ja-toppanel-panels .open {
+	background: none;
+	border-top: 0;
+}
+
+#ja-toppanel .ja-toppanel-button-subwap .ja-toppanel-button-l,
+#ja-toppanel .ja-toppanel-button-subwap .ja-toppanel-button-r { display: none; }
+
+#ja-toppanel .ja-toppanel-container {
+	overflow: visible;
+	position: relative;
+}
+
+#ja-toppanel .ja-toppanel-panels {
+	overflow: visible;
+	position: relative;
+	margin-bottom: 5px;
+}
+
+#ja-toppanel .ja-toppanel-panels .ja-toppanel-button-wraper {
+	height: 1px;
+}
+
+#ja-toppanel .btn-left {
+	position: absolute;
+	right: 20px !important;
+	left: auto !important;
+	float: none !important;
+	width: 80px;
+}
+
+#ja-toppanel .btn-right {
+	position: absolute;
+	left: 20px !important;
+	right: auto !important;
+	float: none !important;
+}
+
+#ja-toppanel .btn-left .ja-toppanel-button {
+	background: url(../images/live-bg.gif) repeat-x left bottom;
+	font-weight: bold;
+	font-size: 92%;
+	text-transform: uppercase;
+	padding: 2px 10px;	
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+#ja-toppanel .open .btn-left .ja-toppanel-button {
+	background: #000;
+	color: #ccc;
+}
+
+
+#ja-toppanel .btn-right .ja-toppanel-button {
+	background: #000;
+	width: 104px;
+	padding: 0 5px 4px 6px;
+	border-radius: 0 0 6px 6px;
+	-moz-border-radius: 0 0 6px 6px;
+	-webkit-border-radius: 0 0 6px 6px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}
+
+#ja-toppanel .btn-right .ja-toppanel-button input { vertical-align: middle; }

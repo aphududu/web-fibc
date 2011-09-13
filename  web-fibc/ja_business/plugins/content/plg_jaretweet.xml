@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+    <name>Content - JA Retweet Button</name>
+	<author>JoomlArt.com</author>
+	<creationDate>16 Nov 2010</creationDate>
+	<copyright>Copyright (C), J.O.O.M Solutions Co., Ltd. All Rights Reserved.</copyright>
+	<license>license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+	<authorEmail>webmaster@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>1.0.3</version>
+	<description>JA RETWEET PLUGIN DESC</description>
+	<files>
+		<filename plugin="plg_jaretweet">plg_jaretweet.php</filename>
+		<folder>plg_jaretweet/</folder>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_plg_jaretweet.ini</language>
+	</languages>
+	<params addpath="/plugins/content/plg_jaretweet/elements">
+		
+		<param 
+			name="group" 
+			type="japaramhelper2" 
+			function="@group" level="3">
+				<option for="source" value="both" hideRow="true">catsid,k2catsid</option>
+				<option for="source" value="com_k2" hideRow="true">k2catsid</option>
+				<option for="source" value="com_content" hideRow="true">catsid</option>
+		</param>		
+		<param 
+			name="settingcontent" 
+			type="japaramhelper2" 
+			default="" 
+			function="@title" 
+			label="CONTENT SETTINGS" 
+			description="CONTENT SETTINGS" level="2"/>		
+		<param 
+			name="source" 
+			type="radio" 
+			default="both" 
+			level="3"
+			label="Enable the Plugin for" 
+			description="Enable the Plugin for desc">
+				<option value="both">Both</option>
+				<option value="com_k2">K2</option>
+				<option value="com_content">Joomla Content</option>
+		</param>
+		
+		<param 
+			name="catsid" 
+			type="japaramhelper2"
+			subtype="categories" 
+			default=""
+			level="3"
+			extension="com_content"
+			label="Select categories" 
+			multiple="true"
+			size="5"
+			description="Select categories desc" >
+		</param>
+		
+		<param 
+			name="k2catsid" 
+			type="categoryK2" 
+			default="" 
+			level="3"
+			label="Select K2 categories" 
+			description="Select K2 categories desc" />
+		
+		<param 
+			name="settingdisplay" 
+			type="japaramhelper2" 
+			default="" 
+			level="2"
+			function="@title" 
+			label="Display Settings" 
+			description="Display Settings"/>
+		<param 
+			name="position" 
+			type="list" 
+			default="onContentBeforeDisplay" 
+			label="Position" 
+			level="3"
+			description="Position desc" >
+				<option value="onBeforeDisplay">Before Display</option>
+				<option value="onAfterDisplayTitle">After Title Display</option>
+				<option value="onBeforeDisplayContent">Before Content Display</option>
+				<option value="onAfterDisplayContent">After Content Display</option>
+				<option value="onAfterDisplay">After Display</option>
+				
+				<option value="onK2BeforeDisplay">K2 Before Display</option>
+				<option value="onK2AfterDisplayTitle">K2 After Title Display</option>
+				<option value="onK2BeforeDisplayContent">K2 Before Content Display</option>
+				<option value="onK2AfterDisplayContent">K2 After Content Display</option>
+				<option value="onK2AfterDisplay">K2 After Display</option>
+		</param>		
+		<param 
+			name="display_on_list" 
+			type="radio" 
+			default="1" 
+			label="show on list pages" 
+			description="show on list pages desc" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>
+		
+		<param 
+			name="display_on_home" 
+			type="radio" 
+			default="1" 
+			level="3"
+			label="show on frontpage" 
+			description="show on frontpage desc" >
+				<option value="1">Yes</option>
+				<option value="0">No</option>
+		</param>						
+		
+		<param name="data-count" type="radio" default="vertical" label="Style of Button on detail page" level="3" description="Choose from preset styles for the button on detail page." >
+			<option value="vertical">Vertical count</option>
+			<option value="horizontal">Horizontal count</option>
+			<option value="none">No count</option>
+		</param>					
+		
+		<param name="data-count-list" type="radio" default="horizontal" label="Style of Button on list page" level="3" description="Choose from preset styles for the button on list page." >
+			<option value="vertical">Vertical count</option>
+			<option value="horizontal">Horizontal count</option>
+			<option value="none">No count</option>
+		</param>
+		
+		<param name="lang" type="list" default="en" label="Language"  level="3" description="Language desc" >
+			<option value="en">English</option>
+			<option value="fr">French</option>
+			<option value="de">German</option>
+			<option value="es">Spanish</option>
+			<option value="ja">Japanese</option>
+		</param>
+		<param name="data-via" type="text" default="" label="Username" level="3" description="Username desc" />
+		<param name="data-related" type="text" default="" label="Related Account"  level="3" description="Related Account desc" />
+		<param name="data-related-desc" type="text" default="" size="40" level="3" label="Related Account Description" description="Related Account Description desc" />
+	</params>
+</install>
