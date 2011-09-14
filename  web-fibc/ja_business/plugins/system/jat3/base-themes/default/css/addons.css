@@ -69,6 +69,7 @@ table {
 /* Clearfix
 -------------------------------------------------------------*/
 * html .clearfix {
+	/*background: url(../images/thanhnganh.jpg);*/
 	height: 1%; /* IE5-6 */
 }
 
@@ -77,6 +78,7 @@ html[xmlns] .clearfix { /* O */
 }
 
 .clearfix:after { /* FF, O, etc. */
+	
 	content: ".";
 	display: block;
 	height: 0;
